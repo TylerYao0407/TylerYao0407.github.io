@@ -7,13 +7,15 @@
 
     
 
-    <title>人生总有起落时，无人一路尽高歌</title>
+    <title>centos7 vi 支持中文 | 人生总有起落时，无人一路尽高歌</title>
     <meta name="author" content="姚福强">
+    
+    <meta name="description" content="我们的VPS主要面向国内用户，所以语言基本上都是中文。中文有很多种编码，最流行的就是UTF8和GBK。我们推荐客户使用UTF8编码，因为这是国际标准，能兼容任何语言的编码。在CentOS VPS下修改语言编码：localedef -c -f UTF-8 -i zh_CN zh_CN.utf8expo">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
+    <meta property="og:title" content="centos7 vi 支持中文"/>
     <meta property="og:site_name" content="Tyler_Yao的个人博客"/>
 
     
@@ -184,76 +186,69 @@
 
 
     <main>
+        <div class="container main-container">
+    <nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper indigo">
+        <span class="breadcrumb">Current page(Categories)</span>
         
-
-
-
-<div id="article-list" class="container main-container">
-    
-        <article class="simple-article">
-    <div class="card">
-        <div class="card-content">
-            <div class="article-title">
-                
-    
-        <h1 class="indigo-link-context"><a href="/2017/03/03/hello-world/">hello-world   //在此处添加你的标题。</a></h1>
-    
-
-
-            </div>
-
-            <time class="pink-link-context" datetime="2017-03-03T11:22:24.190Z"><a href="/2017/03/03/hello-world/">2017-03-03</a></time>
-
             
 
-
-            
-        </div>
+        
 
         
     </div>
-</article>
+</nav>
 
-    
-        <article class="simple-article">
+<article>
     <div class="card">
         <div class="card-content">
+            
+
             <div class="article-title">
                 
     
-        <h1 class="indigo-link-context"><a href="/2017/02/16/centos7 vi 支持中文/">centos7 vi 支持中文</a></h1>
+        <h1>centos7 vi 支持中文</h1>
     
 
 
             </div>
-
             <time class="pink-link-context" datetime="2017-02-16T09:30:00.000Z"><a href="/2017/02/16/centos7 vi 支持中文/">2017-02-16</a></time>
 
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
+
             
 
+            <div class="toc pink-link-context hide-on-med-and-down">
+    
+</div>
 
-            
+
+            <div class="entry pink-link-context">
+                <p>我们的VPS主要面向国内用户，所以语言基本上都是中文。中文有很多种编码，最流行的就是UTF8和GBK。我们推荐客户使用UTF8编码，因为这是国际标准，能兼容任何语言的编码。在CentOS VPS下修改语言编码：<br>localedef -c -f UTF-8 -i zh_CN zh_CN.utf8<br>export LC_ALL=zh_CN.utf8<br>上面第一步是用来产生编码文件，这一步不是必须，编码文件一般都存在，运行localedef –help能查看当前编码文件所在的路径。第二步更改当前的编码为zh_CN.utf8，如果要永久更改，运行(centos 7 以下)：<br>echo ‘LANG=zh_CN.UTF-8’ &gt; /etc/sysconfig/i18n<br>echo ‘LC_ALL=zh_CN.UTF-8’ &gt;&gt; /etc/sysconfig/i18n<br>如果是centos 7.0版本以上<br>echo ‘LANG=zh_CN.UTF-8’ &gt; /etc/locale.conf<br>echo ‘LC_ALL=zh_CN.UTF-8’ &gt;&gt; /etc/locale.conf</p>
+
+                
+<p class="pink-link-context">
+    <a href="/2017/03/03/hello-world/" rel="next" title="hello-world   //在此处添加你的标题。">
+    Prev: hello-world   //在此处添加你的标题。
+  </a>
+</p>
+
+
+
+
+            </div>
+			
         </div>
-
-        
     </div>
 </article>
 
-    
 
-    <ul class="pagination center-align">
-    <li class="disabled">
-        <a href="/"><i class="fa fa-angle-left"></i></a>
-    </li>
-    
-    
-        <li class="active pink"><a href="/">1</a></li>
-    
-    
-    <li class="disabled">
-        <a href="/"><i class="fa fa-angle-right"></i></a>
-    </li>
- </ul>
+
+
+
 
 </div>
 
